@@ -52,8 +52,20 @@ body{
     line-height: 0.8;
 }
 
+.content .contact{
+    display: none;
+}
+
+.content .education{
+    display: none;
+}
+
 .content .education p{
     color: white;
+}
+
+.content .experience{
+    display: none;
 }
 
 .content .experience p{
@@ -68,6 +80,14 @@ body{
 
 .content:hover{
     overflow: auto;
+}
+
+.content .math{
+    display: none;
+}
+
+.content .projects{
+    display: none;
 }
 
 html{
@@ -89,15 +109,35 @@ html{
     border-radius: 50%;
 }
 
+.media .contact{
+    display: none;
+}
+
+.media .education{
+    display: none;
+}
+
 .media .experience{
+    display: none;
     margin-right: 0;
 }
 
-.media .media-image{
+.media .math{
+    display: none;
+}
+
+/*
+.media img{
     height: auto;
     min-width: 400px;
     width: auto;
 }
+*/
+
+.media .projects{
+    display: none;
+}
+
 
 .nav{
     align-items: center;
