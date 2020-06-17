@@ -107,23 +107,52 @@ html{
 .media .about{
     background-color: green;
     border-radius: 50%;
+    height: auto;
+    min-width: 400px;
+    width: auto;
 }
 
 .media .contact{
     display: none;
+    height: auto;
+    min-width: auto;
+    width: auto;
 }
 
 .media .education{
     display: none;
+    height: auto;
+    min-width: 400px;
+    width: auto;
 }
 
 .media .experience{
     display: none;
-    margin-right: 0;
+    height: auto;
+    min-width: 400px;
+    width: auto;
 }
 
 .media .math{
     display: none;
+    width: 250px;
+}
+
+.media .projects{
+    background-color: black;
+    border-radius: 40px;
+    display: none;
+    height: 250px;
+    overflow: hidden;
+    padding: 3%;
+    width: 400px;
+}
+
+.media .projects span{
+    color: #41FF00;
+    font-family: "courier new";
+    font-size: 120%;
+    font-weight: bold;
 }
 
 /*
