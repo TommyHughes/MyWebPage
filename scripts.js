@@ -133,7 +133,7 @@ var infoSection = {
 $('.nav p').on('mouseover', function() {
   navBar.mousedOver=true;
   navBar.$navJQ1=$(this);
-  navBar.mousedOverName=navBar.$navJQ1.prop("classList")[1];
+  navBar.mousedOverName=navBar.$navJQ1.prop("classList")[0];
   navBar.resetDotCount();
   if (navBar.lastNavClicked!==navBar.mousedOverName) {
     navBar.animateTempEllipsisDots();
