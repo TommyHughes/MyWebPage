@@ -1,250 +1,154 @@
-p{
-    font-family: "courier new";
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-.blinking {
-  font-weight: bolder;
-  animation:blinkingText 2s infinite;
-}
-@keyframes blinkingText {
-  0%{opacity:1.0;}
-  49%{opacity:1.0;}
-  50%{opacity:0;}
-  99%{opacity:0;}
-  100%{opacity:1.0;}
+a {
+    color: black;
+    text-decoration: none;
 }
 
-body{
+a:hover {
+    background: black;
+    color: white;
+    font-weight: bold;    
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Prata', serif;
+    font-size: 130%;
+    height: 100%;
+}
+
+.header {
+    align-items: baseline;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    margin: 1% 10% 0.1% 10%;
+    overflow: hidden;
+    width: 80%;
+}
+
+.Logo {
+    flex: 1;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.main {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 3%;
+    flex-direction: row;
+    height: 80vh;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
 }
 
-.company, .project-description {
-  font-size: 120%;
-  font-style: italic;
-  margin: 0;
-}
-
-.content{
-    /*align-items: center;*/
-    background-color: black;
-    border-radius: 40px;
+.mypicture-container {
+    align-items: flex-start;
     display: flex;
-    /*justify-content: center;*/
-    max-height: 20em;
-    max-width: 600px;
-    min-height: 15em;
-    padding: 1% 2% 3% 2%;
+    flex: 1;
+    height: 90%;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.mypicture {
+    background-color: green;
+    border-radius: 60%;
+    height: 100%;
     width: auto;
 }
 
-.content .about{
-    display: inline;
-    min-height: 100%;
+.about-me {
+    flex: 1.5;
+    font-size: 200%;
+    margin-left: 10px;
 }
 
-.content .about p{
-    color: white;
-    font-size: 170%;
-}
-
-.content .about p::first-letter{
+.about-me::first-letter {
     float: left;
-    font-size: 400%;
+    font-size: 300%;
     line-height: 0.8;
 }
 
-.content .contact{
-    display: none;
-    width: 400px;
+.blinking-cursor {
+    font-weight: bolder;
+    animation: blink 2s infinite;
 }
 
-.content .contact a{
-    color: white;
+@keyframes blink {
+    0%{opacity:100%;}
+    49%{opacity:100%;}
+    50%{opacity:0%;}
+    99%{opacity:0%;}
+    100%{opacity:100%;}
 }
 
-.content .contact p{
-    color: white;
-}
-
-.content .education{
-    display: none;
-}
-
-.content .education p{
-    color: white;
-}
-
-.content .experience{
-    display: none;
-}
-
-.content .experience p{
-    color: white;
-}
-
-.content .experience .technologies img{
-    height: 50px;
-    margin: 3px;
-    width: 50px;
-}
-
-.content:hover{
-    overflow: auto;
-}
-
-.content .math{
-    background-color: black;
-    border-radius: 40px;
-    display: none;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    padding: 3%;
-    width: auto;
-}
-
-.content .math a{
-    color: white;
-}
-
-.content .math:hover {
-  overflow: auto;
-}
-
-.content .math img {
-  height: 200px;
-  width: 150px;
-}
-
-.content .math p {
-  color: white;
-  font-size: 200%;
-  font-weight: bold;
-}
-
-.content .projects{
-    display: none;
-    color: white;
-    overflow: auto;
-}
-
-.content .projects a{
-    color: white;
-}
-
-.degree {
-  font-size: 170%;
-  font-weight: bold;
-  margin: 0;
-}
-
-html{
-    margin: 0;
-    padding: 0;
-}
-
-.job-dates {
-  font-size: 80%;
-  margin: 0;
-}
-
-.job-title, .project-title {
-  font-size: 170%;
-  font-weight: bold;
-  margin: 0;
+.main-columnar {
+    height: 80vh;
+    margin: auto;
+    width: 80%;
 }
 
 
-.media{
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    overflow: hidden;
-    max-width: 450px;
-    width: auto;
+.project-link, .job-title {
+    font-size: 200%;
 }
 
-.media .about{
-    background-color: green;
-    border-radius: 50%;
-    height: auto;
-    min-width: 400px;
-    width: auto;
+.project-description {
+    margin-bottom: 5%;
 }
 
-.media .contact{
-    display: none;
-    height: auto;
-    min-width: 250px;
-    width: auto;
-}
-
-.media .education{
-    display: none;
-    height: auto;
-    min-width: 400px;
-    width: auto;
-}
-
-.media .experience{
-    display: none;
-    height: auto;
-    min-width: 400px;
-    width: auto;
-}
-
-.media .math{
-    display: none;
-    width: 400px;
-}
-
-.media .projects{
-    background-color: black;
-    border-radius: 40px;
-    display: none;
-    height: 250px;
-    overflow: hidden;
-    padding: 3%;
-    width: 400px;
-}
-
-.media .projects span{
-    color: #41FF00;
-    font-family: "courier new";
+.company-name {
     font-size: 120%;
-    font-weight: bold;
+    margin-bottom: 5%;
 }
 
-/*
-.media img{
-    height: auto;
-    min-width: 400px;
-    width: auto;
-}
-*/
-
-
-.nav{
-    align-items: center;
-    border-radius: 40px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 1%;
-    width: auto;
+.date-span {
+    font-size: 35%;
 }
 
-.nav p{
-    cursor: pointer;
+
+@media only screen and (max-width: 1500px) {
+    .main {
+        flex-direction: column;
+    }
+    
+    .mypicture-container {
+        margin-bottom: 5%;
+    }
 }
 
-.university {
-  font-size: 120%;
-  font-style: italic;
-  margin: 0;
+@media only screen and (max-width: 1200px) {
+    .header {
+        display: block;
+    }
 }
+
+
+
+
+
