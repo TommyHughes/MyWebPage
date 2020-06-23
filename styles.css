@@ -6,7 +6,7 @@
 
 a {
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 a:hover {
@@ -54,15 +54,17 @@ body {
 
 .nav-link {
     list-style: none;
+    text-decoration: none;
 }
 
 .main {
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: auto;
     justify-content: space-between;
     margin: auto;
+    min-height: 80vh;
     width: 80%;
 }
 
@@ -108,29 +110,99 @@ body {
 }
 
 .main-columnar {
-    height: 80vh;
-    margin: auto;
+    height: auto;
+    min-height: 80vh;
+    margin: 1% 10% 5% 10%;
     width: 80%;
 }
 
+hr {
+    margin-bottom: 5px;
+}
 
-.project-link, .job-title {
+
+.project-link, .job-title, .degree {
     font-size: 200%;
 }
 
-.project-description {
+.project-description, .education-detail {
     margin-bottom: 5%;
 }
 
-.company-name {
+.company-name{
     font-size: 120%;
     margin-bottom: 5%;
 }
 
-.date-span {
+.date-span, .tech-level {
     font-size: 35%;
 }
 
+.school {
+    font-size: 120%;
+}
+
+.tech-item-container {
+    border-radius: 10px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    height: auto;
+    padding: 1%;
+    width: auto;
+}
+
+.tech-logo {
+    float: left;
+    height: 50px;
+    margin: 3px;
+    width: 50px;
+}
+
+.tech-name {
+    font-size: 200%;
+}
+
+.tech-logo-other {
+    height: 50px;
+    margin: 3px;
+    width: 50px;
+}
+
+.education {
+    display: block;
+    margin-top: 5%;
+}
+
+.solution-manuals-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+.solution-manual{
+    margin: 5px;
+}
+
+.math-cover {
+    height: 499px; 
+    width: 333px;
+}
+
+.youtube-logo {
+    width: 333px;
+    height: auto;
+}
+
+.contact-me{
+    font-size: 200%;
+}
+
+.email, .linkedin {
+    font-size: 110%;
+}
 
 @media only screen and (max-width: 1500px) {
     .main {
@@ -139,6 +211,10 @@ body {
     
     .mypicture-container {
         margin-bottom: 5%;
+    }
+    
+    .about-me {
+        margin-bottom: 20px;
     }
 }
 
