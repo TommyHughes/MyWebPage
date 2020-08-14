@@ -1,2 +1,2 @@
 # ThomasJoelHughes
-My Professional Webpage Responsive
+My Professional Webpage
